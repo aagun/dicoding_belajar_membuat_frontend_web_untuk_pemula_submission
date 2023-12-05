@@ -244,7 +244,7 @@ function addBook() {
   const isCompleted = document.getElementById('inputBookIsComplete');
   const id = generateId();
 
-  const book = bookObject(id, title.value, author.value, year.value, isCompleted.checked);
+  const book = bookObject(id, title.value, author.value, Number(year.value), isCompleted.checked);
   books.unshift(book);
 
   resetForm();
